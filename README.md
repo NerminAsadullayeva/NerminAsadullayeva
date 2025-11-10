@@ -16,6 +16,7 @@ Kibertəhlükəsizlik sahəsindəki dərin marağım və məqsədyönlü çalı�
 
 
 
+
 <!-- Burada öz profil şəklinizin URL-sini əlavə edin -->
 
 ---
@@ -25,7 +26,7 @@ Kibertəhlükəsizlik sahəsindəki dərin marağım və məqsədyönlü çalı�
 Aşağıda qeyd etdiyim beynəlxalq səviyyəli sertifikatları əldə etmişəm:
 
 ### 🚀 **Kibertəhlükəsizlik və Texnologiya Sertifikatları**
-- ![Google Professional Certificate](https://your-google-cert-link.com)  
+<img src="./assets/cybershieldy.png" width="700" />
 - ![Microsoft Certified: Azure Fundamentals](https://your-microsoft-cert-link.com)  
 - ![AWS Certified Solutions Architect](https://your-aws-cert-link.com)  
 - ![CompTIA Security+](https://your-comptia-cert-link.com)  
