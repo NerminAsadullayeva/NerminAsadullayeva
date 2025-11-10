@@ -13,7 +13,8 @@ Kibertəhlükəsizlik sahəsindəki dərin marağım və məqsədyönlü çalı�
 
 ## 📸 Profil Şəkili
 
-![Profil Şəkili](./assets/WhatsApp Image 2025-11-10 at 22.59.36_5d6af877.jpg)   
+![Profil Şəkili](./assets/whatsapp-image-2025-11-10-22-59-36-5d6af877.jpg)
+
 <!-- Burada öz profil şəklinizin URL-sini əlavə edin -->
 
 ---
