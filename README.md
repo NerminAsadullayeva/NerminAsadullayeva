@@ -13,7 +13,7 @@ Kibertəhlükəsizlik sahəsindəki dərin marağım və məqsədyönlü çalı�
 
 ## 📸 Profil Şəkili
 
-![Profil Şəkili](https://your-profile-image-link.com)  
+![Profil Şəkili](./assets/profile-image.jpg)   
 <!-- Burada öz profil şəklinizin URL-sini əlavə edin -->
 
 ---
