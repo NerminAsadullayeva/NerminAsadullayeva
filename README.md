@@ -12,7 +12,7 @@ Kibertəhlükəsizlik sahəsindəki dərin marağım və məqsədyönlü çalı�
 ---
 
 ## 📸 Profil Şəkili
-
+<img src="./assets/whatsapp-image-2025-11-10-22-59-36-5d6af877.jpg" width="420" alt="CyberShieldy Logo" />
 ![Profil Şəkili](/assets/whatsapp-image-2025-11-10-22-59-36-5d6af877.jpg)
 
 <!-- Burada öz profil şəklinizin URL-sini əlavə edin -->
