@@ -2,22 +2,78 @@
 <html lang="az">
 <head>
     <meta charset="UTF-8">
-    <title>Nərmin Əsədullayeva - README</title>
+    <title>Nərmin Əsədullayeva - Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Markdown converter -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
     <style>
         body {
+            margin: 0;
+            padding: 0;
+            background: #1f1f1f; /* Tünd boz fon */
+            font-family: "Inter", sans-serif;
+            color: #e4e4e4;
+        }
+
+        .container {
             max-width: 900px;
-            margin: auto;
-            padding: 30px;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            margin: 50px auto;
+            padding: 40px;
+            background: #2a2a2a; /* Kartın fonu */
+            border-radius: 16px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.45);
+            border: 1px solid rgba(255,255,255,0.07);
+            backdrop-filter: blur(4px);
+        }
+
+        h1, h2, h3, h4 {
+            color: #ffffff;
+            border-bottom: 1px solid #3a3a3a;
+            padding-bottom: 8px;
+        }
+
+        a {
+            color: #66aaff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 12px;
+            margin: 15px 0;
+            box-shadow: 0 0 12px rgba(0,0,0,0.35);
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #555;
+            border-radius: 4px;
+        }
+
+        #loading {
+            text-align: center;
+            font-size: 22px;
+            padding-top: 50px;
+            opacity: 0.8;
         }
     </style>
 </head>
 <body>
 
-<div id="content">README yüklənir...</div>
-
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<div class="container">
+    <div id="loading">README yüklənir...</div>
+    <div id="content" style="display:none;"></div>
+</div>
 
 <script>
   const username = "NerminAsadullayeva";
@@ -27,15 +83,15 @@
   const readmeURL = `https://raw.githubusercontent.com/${username}/${repo}/${branch}/README.md`;
 
   fetch(readmeURL)
-    .then(response => {
-      if (!response.ok) throw new Error("README yüklənmədi");
-      return response.text();
-    })
+    .then(response => response.text())
     .then(md => {
-      document.getElementById("content").innerHTML = marked.parse(md);
+        document.getElementById("loading").style.display = "none";
+        document.getElementById("content").style.display = "block";
+        document.getElementById("content").innerHTML = marked.parse(md);
     })
-    .catch(err => {
-      document.getElementById("content").innerText = err.toString();
+    .catch(() => {
+        document.getElementById("loading").innerText =
+            "README yüklənmədi! Fayl yolu səhv ola bilər.";
     });
 </script>
 
