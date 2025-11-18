@@ -1,1 +1,43 @@
-<p>salam</p>
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Nərmin Əsədullayeva - README</title>
+    <style>
+        body {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<div id="content">README yüklənir...</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script>
+  const username = "NerminAsadullayeva";
+  const repo     = "NerminAsadullayeva";
+  const branch   = "main";
+
+  const readmeURL = `https://raw.githubusercontent.com/${username}/${repo}/${branch}/README.md`;
+
+  fetch(readmeURL)
+    .then(response => {
+      if (!response.ok) throw new Error("README yüklənmədi");
+      return response.text();
+    })
+    .then(md => {
+      document.getElementById("content").innerHTML = marked.parse(md);
+    })
+    .catch(err => {
+      document.getElementById("content").innerText = err.toString();
+    });
+</script>
+
+</body>
+</html>
