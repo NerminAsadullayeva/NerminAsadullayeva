@@ -12,7 +12,7 @@ Kibertəhlükəsizlik sahəsindəki dərin marağım və məqsədyönlü çalı�
 ---
 
 
-<img src="./assets/WhatsApp Image 2025-11-10 at 22.59.36_5d6af877.jpg" width="420" />
+<img src="./assets/nermis.jpg" width="420" />
 
 
 
